@@ -59,7 +59,7 @@ A comprehensive SSL/TLS vulnerability scanner extension for Burp Suite built wit
 
 ## Project Info
 
-- **Version:** 1.0.0
+- **Version:** 1.0.2
 - **API:** Burp Suite Montoya API
 - **Language:** Java
 - **License:** MIT
