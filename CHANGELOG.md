@@ -5,6 +5,30 @@ All notable changes to the SSL Scanner++ extension will be documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2025-09-16
+
+### Changed
+- **API Compliance**: Updated to conform with latest Burp Suite Extension API standards
+- **Java Runtime**: Upgraded from Java 11 to Java 21 for better performance and modern language features
+- **Montoya API**: Updated from 2023.12.1 to 2025.5 for latest Burp Suite compatibility
+- **Dependency Management**: Set Montoya API dependency scope to `provided` following BApp Store requirements
+
+### Added
+- **Resource Cleanup**: Implemented proper `terminate()` method for clean extension unloading
+- **Thread Safety**: Added background scan cancellation during extension termination
+- **Extension State**: Added extension unload tracking to prevent operations on terminated extension
+
+### Fixed
+- **Memory Leaks**: Proper cleanup of references and background tasks during extension unload
+- **Thread Management**: Ensures CompletableFuture scan tasks are properly cancelled when extension is unloaded
+- **Resource Management**: Prevents hanging threads when Burp Suite is closed or extension is reloaded
+
+### Technical Details
+- Added `terminate()` override in BurpExtender class for proper shutdown handling
+- Added `cancelAnyRunningScan()` method to SSLScannerTab for graceful scan termination
+- Updated Maven configuration for Java 21 compatibility
+- Enhanced dependency management following Burp Suite extension best practices
+
 ## [1.0.3] - 2025-09-15
 
 ### Fixed
