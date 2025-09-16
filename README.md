@@ -6,10 +6,10 @@ A comprehensive SSL/TLS vulnerability scanner extension for Burp Suite built wit
 
 ### Installation
 
-1. Download `burp-ssl-scanner-plus-plus.1.0.3.jar` from the releases
+1. Download `burp-ssl-scanner-plus-plus.x.x.x.jar` from the releases
 2. In Burp Suite, go to **Extensions** → **Installed**
 3. Click **Add** and select **Java** as extension type
-4. Browse to `burp-ssl-scanner-plus-plus.1.0.0.jar`
+4. Browse to `burp-ssl-scanner-plus-plus.x.x.x.jar`
 5. Click **Next** to load the extension
 
 ### Usage
@@ -59,7 +59,7 @@ A comprehensive SSL/TLS vulnerability scanner extension for Burp Suite built wit
 
 ## Project Info
 
-- **Version:** 1.0.3
+- **Version:** > 1.0.0
 - **API:** Burp Suite Montoya API
 - **Language:** Java
 - **License:** MIT
